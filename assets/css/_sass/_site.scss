@@ -6,6 +6,23 @@ body {
   letter-spacing: 0.001em;
 }
 
+.maquina {
+  background-image: url('/assets/images/maquina.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 135px;
+  position: fixed;
+  margin-top: 300px;
+  margin-left: -15px;
+}
+
+@media (max-width: 768px)
+{
+  .maquina {
+    display: none;
+  }
+}
+
 .footer {height:60px;}
 
 main {position: relative;}
