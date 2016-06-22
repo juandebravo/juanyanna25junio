@@ -12,6 +12,28 @@ title: Transporte
           Para evitar cualquier incidencia, hemos contratado 4 autobuses que saldrán de Caldes de Montbui camino a la masía a las 19:00. Para evitar esperar a una persona, por favor, estar en el punto de recogida (por confirmar todavía) a las 18:50. <b>Recuerda, no hagas a 115 personas esperar por una persona</b>.
       </p>
       <p>
+        Los autobuses estarán situados en el Passeig del Remei, enfrente de la antigua cárcel de Caldes de Montbui. Son 5 minutos caminando desde el Balneario Broquetes.
+        <div id="map" style="width: 500px; height: 400px; margin-left: 25px">
+        </div>
+        <script>
+          function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+              center: {lat: 41.636065, lng: 2.1601143},
+              zoom: 19,
+              backgroundColor: '#CCC'
+            });
+
+            var marker = new google.maps.Marker({
+              position: {lat: 41.636065, lng: 2.1601143},
+              map: map,
+              title: 'Salida del autobús'
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+      </p>
+      <p>
           Para el camino de regreso, contaremos con un shuttle bus que comenzará a las 00:30 y realizará cinco viajes (es decir, el último bus está previsto a las 5:30). Otras opciones para bajar de la masía son andando (ojo, una hora larga) o solicitando un taxi en Caldes de Montbui.
       </p>
     </div>
